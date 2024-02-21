@@ -18,7 +18,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
     final TextEditingController equationcontroller = TextEditingController();
 
-
+    //todo: make fontsize dynamics on buttons, onclick event too
     return Scaffold(
       appBar: AppBar(title: const Text("My Calculator"),),
       backgroundColor: const Color.fromRGBO(6, 10, 20, 1),
