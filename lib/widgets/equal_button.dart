@@ -17,6 +17,11 @@ class CalcEqualButton extends StatelessWidget {
           child: ElevatedButton(
               onPressed: () {},
               style: ButtonStyle(
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+              ),
                 backgroundColor: MaterialStateProperty.all<Color>(color),
               ),
               child: Text(text),

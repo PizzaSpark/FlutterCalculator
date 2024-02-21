@@ -9,7 +9,7 @@ class ButtonRow extends StatelessWidget {
     return const Expanded(
       child: Row(
         children: [
-          CalcButton(text: "Uwu", color: Colors.blue),
+          CalcButton(text: "UwU", color: Colors.blue),
           CalcButton(text: "Uwu", color: Colors.blue),
           CalcButton(text: "Uwu", color: Colors.blue),
           CalcButton(text: "Uwu", color: Colors.blue),
