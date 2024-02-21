@@ -20,7 +20,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
 
     return Scaffold(
-      appBar: AppBar(title: Text("My Calculator"),),
+      appBar: AppBar(title: const Text("My Calculator"),),
       backgroundColor: const Color.fromRGBO(6, 10, 20, 1),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -30,10 +30,46 @@ class _CalculatorPageState extends State<CalculatorPage> {
           EquationTextfield(controller: equationcontroller, color: Colors.yellow),
           const ButtonBG(
             children: [
-              ButtonRow(),
-              ButtonRow(),
-              ButtonRow(),
-              ButtonRow(),
+              ButtonRow(
+                color1: Colors.blue,
+                color2: Colors.blue,
+                color3: Colors.blue,
+                color4: Colors.blue,
+                child1: Text("UwU"),
+                child2: Text("UwU"),
+                child3: Text("UwU"),
+                child4: Text("UwU"),
+              ),
+              ButtonRow(
+                color1: Colors.blue,
+                color2: Colors.blue,
+                color3: Colors.blue,
+                color4: Colors.blue,
+                child1: Text("UwU"),
+                child2: Text("UwU"),
+                child3: Text("UwU"),
+                child4: Text("UwU"),
+              ),
+              ButtonRow(
+                color1: Colors.blue,
+                color2: Colors.blue,
+                color3: Colors.blue,
+                color4: Colors.blue,
+                child1: Text("UwU"),
+                child2: Text("UwU"),
+                child3: Text("UwU"),
+                child4: Text("UwU"),
+              ),
+              ButtonRow(
+                color1: Colors.blue,
+                color2: Colors.blue,
+                color3: Colors.blue,
+                color4: Colors.blue,
+                child1: Text("UwU"),
+                child2: Text("UwU"),
+                child3: Text("UwU"),
+                child4: Text("UwU"),
+              ),
               ButtonWEqual()
             ],
           )

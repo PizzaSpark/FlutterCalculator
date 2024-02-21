@@ -10,9 +10,9 @@ class ButtonWEqual extends StatelessWidget {
     return const Expanded(
       child: Row(
         children: [
-          CalcButton(text: "Uwu", color: Colors.blue),
-          CalcButton(text: "Uwu", color: Colors.blue),
-          CalcEqualButton(text: "Uwu", color: Colors.black87),
+          CalcButton(child: Text("."), color: Colors.blue),
+          CalcButton(child: Text("0"), color: Colors.blue),
+          CalcEqualButton(text: "=", color: Colors.black87),
         ],
       ),
     );

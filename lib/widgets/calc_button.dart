@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CalcButton extends StatelessWidget {
-  final String text;
+  final Widget child;
   final Color color;
-  const CalcButton({super.key, required this.text, required this.color});
+  const CalcButton({super.key, required this.child, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class CalcButton extends StatelessWidget {
                 ),
                 backgroundColor: MaterialStateProperty.all<Color>(color),
               ),
-              child: Text(text),
+              child: child,
             ),
         ),
       ),
