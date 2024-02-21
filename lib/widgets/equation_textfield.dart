@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class EquationTextfield extends StatefulWidget {
   final TextEditingController controller;
@@ -15,15 +18,19 @@ class _EquationTextfieldState extends State<EquationTextfield> {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-            color: widget.color ,
-            child: TextField(
-                textAlign: TextAlign.right,
-                controller: widget.controller,
-                expands: true,
-                readOnly: false,
-                maxLines: null,
-              ),
-            ),
+        color: widget.color,
+        child: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+            double fontSize = constraints.maxHeight * 0.6;
+            return TextField(
+              textAlign: TextAlign.right,
+              controller: widget.controller,
+              style: TextStyle(fontSize: fontSize, color: Colors.red),
+              maxLines: 1,
+            );
+          },
+        ),
+      ),
     );
   }
 }
