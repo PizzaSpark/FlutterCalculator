@@ -1,5 +1,6 @@
 import 'package:calc/widgets/button_bg.dart';
 import 'package:calc/widgets/button_row.dart';
+import 'package:calc/widgets/buttonwequal_row.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -24,7 +25,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
               ButtonRow(),
               ButtonRow(),
               ButtonRow(),
-              ButtonRow(),
+              ButtonWEqual()
             ],
           )
         ],
