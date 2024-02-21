@@ -8,7 +8,7 @@ class CalcEqualButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      flex: 8,
+      flex: 2,
       child: Container(
         height: double.infinity,
         color: Colors.red,
